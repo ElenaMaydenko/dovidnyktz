@@ -290,6 +290,7 @@ tr:nth-child(even){background:#f0ead9;}
 .tile-primary .tile-body{background:transparent;}
 .tile-primary .tile-body h3{color:var(--navy);}
 .tile-primary .tile-body p{color:#1c2b4a;}
+.tile-primary .tile-body p.tile-note{font-size:0.8em;font-style:italic;margin-top:10px;color:#2c3a55;}
 .tile-secondary .tile-body h3{color:#fff;}
 .tile-secondary .tile-body p{color:#e6e9f0;}
 .tile-secondary{border-color:var(--navy);}
