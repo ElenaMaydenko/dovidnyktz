@@ -278,9 +278,18 @@ tr:nth-child(even){background:#f0ead9;}
   font-size:0.88em;
   color:#555;
 }
-.tile-secondary .tile-body{
+.tile-secondary{
   background:linear-gradient(120deg, var(--navy) 0%, var(--navy-light) 100%);
 }
+.tile-secondary .tile-body{background:transparent;}
+/* яскраві плитки «Крок 1/2»: золотий фон, темно-синій текст (контраст ~8:1) */
+.tile-primary{
+  background:linear-gradient(120deg, #f2b632 0%, #ffd45c 100%);
+  border-color:#d99a1e;
+}
+.tile-primary .tile-body{background:transparent;}
+.tile-primary .tile-body h3{color:var(--navy);}
+.tile-primary .tile-body p{color:#1c2b4a;}
 .tile-secondary .tile-body h3{color:#fff;}
 .tile-secondary .tile-body p{color:#e6e9f0;}
 .tile-secondary{border-color:var(--navy);}
