@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Підготовка документів для Mercurio — перехід з ТЗ (ст. 191.3)</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-bar">
+    <a href="../index.html" class="nav-logo">Головна</a>
+    <nav class="nav-links">
+      <a href="cuenta-propia.html">Бізнес та самозайняті</a>
+      <a href="cuenta-ajena.html">Трудовий контракт</a>
+      <a href="arraigo.html">Осілість / Arraigo</a>
+      <a href="dity.html">Діти</a>
+      <a href="dokumenty.html" class="nav-docs">Документи</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner">
+  <h1>Крок 1 з 2. Підготовка документів для подачі через Mercurio</h1>
+  <div class="badges">
+    <span class="badge">EX-26, ст. 191.3 RD 1155/2024</span>
+    <span class="badge">Cuenta propia (+ примітки для cuenta ajena)</span>
+    <span class="badge">Перевірено на реальній подачі, листопад 2026</span>
+  </div>
+</div>
+
+<div class="container">
+
+<div class="disclaimer">
+  <strong>Що це за сторінка.</strong> Інструкцію написано за реальною подачею, яку ми пройшли крок за кроком у листопаді 2026 року (Аліканте, autónoma, перехід із тимчасового захисту). Тут зібрано відповіді на всі питання, що виникали в процесі. Це не юридична консультація: правила і сайти міністерства змінюються, тож звіряйте деталі з <a href="https://www.inclusion.gob.es/web/migraciones/modelos-generales" target="_blank">офіційними джерелами</a>. Друга частина — <a href="podacha-mercurio.html">Крок 2: подача через Mercurio</a>.
+</div>
+
+<div class="persona">
+  <strong>Наш приклад — Оксана Шевченко</strong> (усі дані вигадані). Живе в Аліканте з 2022 року за тимчасовим захистом. З 01.09.2022 — autónoma (тестування програмного забезпечення), працює з дому на одного клієнта — естонську компанію ACME Solutions OÜ, щомісяця виставляє фактуру. Заміжня, син Марко, 13 років, ходить до школи (у сина прізвище Коваленко — інше, ніж у мами). Хоче перейти на <em>residencia y trabajo por cuenta propia</em> на 4 роки (ст. 191.3).
+</div>
+
+<div class="toc">
+<strong>Порядок роботи</strong>
+<ol>
+  <li><a href="#pravyla">Загальні правила для файлів</a></li>
+  <li><a href="#perelik">Перелік документів: що потрібно, а що ні</a></li>
+  <li><a href="#ex26">Бланк EX-26: що в яке поле</a></li>
+  <li><a href="#memoria">Memoria de actividad (опис діяльності)</a></li>
+  <li><a href="#tasa">Оплата та реєстрація таси 790-052</a></li>
+  <li><a href="#indice">Índice — перелік документів</a></li>
+  <li><a href="#pidpys">Підписання AutoFirma</a></li>
+  <li><a href="#perevirka">Фінальна перевірка папки</a></li>
+</ol>
+</div>
+
+<h2 id="pravyla">1. Загальні правила для файлів</h2>
+<p>Ці обмеження ставить сама платформа Mercurio (вони написані на сторінці завантаження і в офіційному посібнику користувача). Якщо файл їм не відповідає, ви дізнаєтеся про це вже посеред подачі.</p>
+<table>
+<tr><th>Правило</th><th>Що це означає на практиці</th></tr>
+<tr><td>Формат: <strong>pdf, jpg, tif, gif</strong></td><td>Робіть усе в PDF. <strong>Zip не приймається</strong> — якщо податкові моделі чи фактури у вас в архіві, розпакуйте й зберіть у PDF.</td></tr>
+<tr><td><strong>До 6 МБ на один файл</strong></td><td>Скан паспорта на 18 розворотів із кольоровими сторінками важить близько 4 МБ — це нормально. Якщо файл більший, відскануйте з роздільністю 150–200 dpi. <strong>Не стискайте файли з електронним підписом</strong> (договір, підписана меморія тощо) — стиснення ламає підпис. Якщо підписаний файл великий, пошукайте оригінал: роздрукований і відсканований договір у нас важив 12 МБ, а оригінальний PDF із сервісу підпису — 2 МБ.</td></tr>
+<tr><td>Символи в <strong>назві файлу</strong>: a–z, A–Z, á–ú, Á–Ú, ñ, Ñ, 0–9, підкреслення, дефіс, крапка, пробіл, дужки</td><td>Без кирилиці і без «чужих» літер. Наприклад, <code class="v">ACME Solutions OÜ_contract.pdf</code> — не пройде через <strong>Ü</strong>; перейменуйте на <code class="v">Contrato_ACME_15.pdf</code>. Перейменування не ламає електронний підпис.</td></tr>
+<tr><td><strong>Один документ — один файл</strong></td><td>Кожен «обов'язковий» тип документа в Mercurio приймає лише один файл, усе інше йде як «Otros documentos» (детально — у <a href="podacha-mercurio.html#zavantazhennia">Кроці 2</a>). Тому не треба нічого склеювати.</td></tr>
+<tr><td><strong>Не об'єднуйте підписані PDF</strong></td><td>Склеєний файл втрачає підписи всіх частин, а розмір легко перевищить 6 МБ.</td></tr>
+</table>
+<div class="qa"><strong>Порада.</strong> Складіть усе в одну папку. Підписані версії називайте з суфіксом <code class="v">_signed</code>, а непідписані чернетки після підписання видаліть або перенесіть в іншу папку — так у Mercurio не завантажиться випадково не той файл.</div>
+
+<h2 id="perelik">2. Перелік документів</h2>
+<p>Офіційна база — <a href="https://www.inclusion.gob.es/web/migraciones/w/55.-modificacion-desde-situaciones-de-autorizaciones-de-residencia-temporal-que-habilitan-a-trabajar" target="_blank">Hoja informativa 55</a> міністерства та ст. 86 і 191.3 RD 1155/2024. Для пункту 191.3 і cuenta propia закон вимагає довести, що ви <em>продовжуєте діяльність і виконуєте податкові обов'язки та обов'язки перед Seguridad Social</em>, плюс довідку про навчання дітей шкільного віку. Нижче — що саме подала Оксана і навіщо.</p>
+
+<table>
+<tr><th>№</th><th>Документ</th><th>Де взяти / як зробити</th><th>Нюанси</th></tr>
+<tr><td>1</td><td><strong>Índice</strong> — перелік документів</td><td>Складаєте самі (<a href="#indice">розділ 6</a>)</td><td>Не обов'язковий, але дуже допомагає інспектору. Підписати AutoFirma.</td></tr>
+<tr><td>2</td><td><strong>EX-26</strong>, заповнений і підписаний</td><td><a href="../blanky/EX-26_modificacion_editable.pdf" target="_blank">Бланк</a> (<a href="#ex26">розділ 3</a>)</td><td>Mercurio сам формує EX-26 з ваших онлайн-відповідей, тож окремий бланк — додатковий, але корисний (див. розділ 3).</td></tr>
+<tr><td>3</td><td><strong>Паспорт</strong> — усі сторінки</td><td>Скан</td><td>Усі розвороти, включно з порожніми, одним PDF. Паспорт має бути чинним.</td></tr>
+<tr><td>4</td><td><strong>Картка ТЗ (TIE)</strong> з обох боків</td><td>Скан</td><td>Якщо на картці стара адреса — не страшно, в усіх формах пишіть адресу з падрону.</td></tr>
+<tr><td>5</td><td><strong>Certificado de empadronamiento</strong></td><td>Ajuntament (онлайн або в офісі)</td><td>Свіжий (не старший за 3 місяці). <strong>Адреса в падроні має збігатися з адресою в AEAT і Seguridad Social</strong> — якщо ви переїжджали, спершу оновіть адресу там (в AEAT — через «Mis datos censales» / модель 036).</td></tr>
+<tr><td>6</td><td><strong>Certificado de situación censal</strong> (AEAT)</td><td><a href="https://sede.agenciatributaria.gob.es/" target="_blank">Sede AEAT</a> → Certificados → Situación censal</td><td>Показує, що ви зареєстровані як autónomo і з якої дати. Після зміни адреси в AEAT завантажте сертифікат заново — у ньому має бути нова адреса.</td></tr>
+<tr><td>7</td><td><strong>Informe de vida laboral</strong></td><td><a href="https://portal.seg-social.gob.es/wps/portal/importass/importass" target="_blank">Import@ss</a></td><td>Показує alta в RETA без перерв.</td></tr>
+<tr><td>8</td><td><strong>Memoria de actividad</strong></td><td>Пишете самі (<a href="#memoria">шаблон у розділі 4</a>)</td><td>1 сторінка іспанською, підписати AutoFirma.</td></tr>
+<tr><td>9</td><td><strong>Договір із клієнтом</strong></td><td>Ваш оригінал</td><td>Краще оригінальний PDF з електронним підписом, а не скан роздруківки.</td></tr>
+<tr><td>10</td><td><strong>Переклад договору</strong> (якщо він не іспанською)</td><td>Див. примітку нижче</td><td>Hoja 55: документи інших країн — з перекладом <em>traductor jurado</em>.</td></tr>
+<tr><td>11</td><td><strong>IRPF (Renta)</strong> за останні роки</td><td>Sede AEAT → Renta → declaraciones presentadas</td><td>Оксана подала 2023–2025. Рік, коли ви працювали лише кілька місяців, можна не додавати — у Hoja 55 Renta взагалі не згадується.</td></tr>
+<tr><td>12</td><td><strong>Modelo 390</strong> за минулий рік (якщо є)</td><td>Sede AEAT</td><td>Річна декларація з IVA.</td></tr>
+<tr><td>13</td><td><strong>Modelos 130, 303, 349</strong> поточного року</td><td>Sede AEAT</td><td>Усі квартали одним PDF, якщо вміщається в 6 МБ.</td></tr>
+<tr><td>14</td><td><strong>Фактури</strong> за період, на який ви посилаєтеся в меморії</td><td>Ваша програма для фактур</td><td>Одним PDF. Звірте суми з меморією (<a href="#memoria">розділ 4</a>).</td></tr>
+<tr><td>15</td><td><strong>Квитанції таси 790-052</strong>: оплата + реєстрація</td><td><a href="#tasa">Розділ 5</a></td><td>Два окремі файли.</td></tr>
+<tr><td>16</td><td><strong>Certificado de antecedentes penales</strong> (Іспанія)</td><td><a href="https://sede.mjusticia.gob.es/es/tramites/certificado-antecedentes" target="_blank">sede.mjusticia.gob.es</a></td><td>Діє 3 місяці. Офіс може перевірити сам, якщо ви не заборонили (див. Крок 2), але з довідкою надійніше.</td></tr>
+<tr><td>17</td><td><strong>Довідка про навчання дітей</strong> 6–16 років</td><td>Школа (certificado de matrícula)</td><td>Ст. 86.3: обов'язкова, якщо діти в віці обов'язкової освіти. Підходить довідка від самої школи з підписом директора. Якщо прізвище дитини інше, ніж у вас, — напишіть в índice, що це ваша дитина.</td></tr>
+</table>
+
+<div class="link-box"><strong>Переклад договору — як зробили ми.</strong> Офіційне правило (Hoja 55) — переклад присяжним перекладачем (<a href="https://exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Traductores-Interpretes-Jurados.aspx" target="_blank">список</a>). Оксана обрала інший варіант: разом із клієнтом підписала <strong>додаткову угоду (adenda)</strong> двома мовами, до якої як додаток увійшов повний іспанський текст договору. Так іспанська версія стала частиною самого договору. Це не присяжний переклад, тож офіс може попросити його окремо (на це дадуть строк). Якщо хочете без ризику — замовляйте присяжний переклад.</div>
+
+<h3>Чого не треба (і чому)</h3>
+<ul>
+  <li><span class="tag-ok">Certificado al corriente</span> (AEAT і Seguridad Social) — офіс перевіряє сам, якщо ви не поставите галочку «NO CONSIENTO» у Mercurio (ст. 86.5).</li>
+  <li><span class="tag-ok">Банківські виписки</span> — у Hoja 55 для цього пункту їх немає; доходи видно з фактур і податкових моделей.</li>
+  <li><span class="tag-ok">Розрахунок IPREM</span> — ст. 86 не ставить для cuenta propia вимоги щодо IPREM.</li>
+  <li><span class="tag-ok">Свідоцтво про народження дитини</span> — для вашої заяви потрібна лише довідка про навчання. Свідоцтво знадобиться для окремої заяви самої дитини (<a href="dity.html">сторінка «Діти»</a>).</li>
+  <li><span class="tag-ok">Медичне страхування</span> — як autónomo ви вже застраховані через RETA.</li>
+</ul>
+
+<div class="ajena">замість меморії, договору з клієнтом і податкових моделей подаються <strong>трудовий договір, підписаний вами і роботодавцем</strong>, vida laboral і, за бажанням, останні nóminas. Вимоги до договору та інші варіанти (безробіття, 9 місяців роботи з 12 тощо) — на сторінці <a href="cuenta-ajena.html">«Трудовий контракт»</a>. Довідка про навчання дітей потрібна так само.</div>
+
+<h2 id="ex26">3. Бланк EX-26: що в яке поле</h2>
+<p><strong>Чи обов'язковий окремий бланк?</strong> Ні: у Mercurio ви заповнюєте ті самі дані онлайн, і система сама генерує EX-26. Але заповнити бланк заздалегідь варто: (1) це готова «шпаргалка» для онлайн-форми, (2) підписаний бланк можна додати як «Otros documentos», і в ньому буде повна адреса — онлайн-форма в нашому випадку «з'їла» номер дверей.</p>
+<ul>
+  <li>Беріть <a href="../blanky/EX-26_modificacion_editable.pdf" target="_blank">актуальний бланк</a> (у листопаді 2026 міністерство оновило текст: у пункті 191.3 тепер «más de un año» замість «al menos un año»).</li>
+  <li>Заповнюйте в <strong>Adobe Acrobat Reader</strong>: браузер іноді не зберігає введене.</li>
+  <li><strong>ВЕЛИКИМИ ЛІТЕРАМИ</strong>, дати — <code class="v">дд/мм/рррр</code>, ім'я та прізвище латиницею точно як у паспорті.</li>
+</ul>
+
+<figure class="shot"><img src="../images/guide/ex26-ejemplo-p1.png" alt="EX-26, сторінка 1, заповнена даними Оксани Шевченко"><figcaption>EX-26, сторінка 1 — приклад Оксани (вигадані дані).</figcaption></figure>
+
+<h3>Розділ 1. DATOS DE LA PERSONA EXTRANJERA</h3>
+<table>
+<tr><th>Поле</th><th>Що писати</th><th>Приклад Оксани</th></tr>
+<tr><td>PASAPORTE</td><td>Номер паспорта</td><td><code class="v">FX000000</code></td></tr>
+<tr><td>N.I.E.</td><td>Три окремі клітинки: літера, 7 цифр, літера</td><td><code class="v">Y | 0000000 | Z</code></td></tr>
+<tr><td>1er Apellido / 2º Apellido</td><td>Прізвище як у паспорті. У більшості українців другого прізвища немає — залиште порожнім</td><td>SHEVCHENKO / —</td></tr>
+<tr><td>Nombre</td><td>Ім'я як у паспорті. По батькові не пишемо</td><td>OKSANA</td></tr>
+<tr><td>Sexo</td><td>M — жінка, H — чоловік</td><td>M</td></tr>
+<tr><td>Fecha de nacimiento</td><td>дд / мм / рррр</td><td>15 / 04 / 1985</td></tr>
+<tr><td>Lugar / País</td><td>Місце народження як у паспорті, країна</td><td>KYIV / UCRANIA</td></tr>
+<tr><td>Nacionalidad</td><td>Громадянство</td><td>UCRANIANA</td></tr>
+<tr><td>Estado civil</td><td>S — неодружені, C — у шлюбі, V — вдівець/вдова, D — розлучені, Sp — живете окремо</td><td>C</td></tr>
+<tr><td>Nombre del padre / de la madre</td><td>Лише імена батьків, латиницею</td><td>TARAS / OLHA</td></tr>
+<tr><td>Domicilio en España, Nº, Piso</td><td>Адреса <strong>точно як у падроні</strong>. Двері (puerta) — у рядок Domicilio</td><td>CALLE MAYOR, PUERTA 2 / 10 / BAJO</td></tr>
+<tr><td>Localidad, C.P., Provincia</td><td>З падрону</td><td>ALICANTE / 03001 / ALICANTE</td></tr>
+<tr><td>Teléfono móvil, E-mail</td><td>Ваші. На них приходять повідомлення про нові сповіщення</td><td>—</td></tr>
+<tr><td>Representante legal</td><td>Лише для неповнолітніх або недієздатних. Залишити порожнім</td><td>—</td></tr>
+<tr><td>Hijas/os a cargo en edad de escolarización</td><td>SÍ, якщо у вас діти віком обов'язкової освіти (6–16)</td><td>SÍ</td></tr>
+</table>
+
+<h3>Розділи 2–4</h3>
+<ul>
+  <li><strong>2) DATOS DE EMPLEADOR/A</strong> — для cuenta propia <strong>залишити порожнім</strong> (роботодавця немає). <span class="note">У Mercurio аналогічну вкладку ми заповнили власними даними як autónoma — див. Крок 2; така розбіжність не заважає.</span></li>
+  <li><strong>3) DATOS DEL REPRESENTANTE</strong> — порожньо, якщо подаєте самі.</li>
+  <li><strong>4) DOMICILIO A EFECTOS DE NOTIFICACIONES</strong> — ваші дані ще раз (ім'я, NIE, адреса, телефон, e-mail) і галочка <strong>«CONSIENTO … Dehú»</strong>: рішення та запити приходитимуть в електронну скриньку <a href="https://dehu.redsara.es/" target="_blank">Dehú</a>, відкривати — тим самим сертифікатом. Autónomos у будь-якому разі зобов'язані спілкуватися з адміністрацією електронно.</li>
+</ul>
+<div class="ajena">у розділі 2 вкажіть роботодавця: назву, NIF/CIF, вид діяльності (Actividad), код CNAE, адресу, телефон, e-mail. Ці дані є в трудовому договорі; код CNAE уточніть у роботодавця.</div>
+
+<h3>Розділ 5 і нижня частина сторінки 2</h3>
+<figure class="shot"><img src="../images/guide/ex26-ejemplo-p2.png" alt="EX-26, сторінка 2"><figcaption>EX-26, сторінка 2: одна галочка в пункті 191.3, місце й дата, адресат.</figcaption></figure>
+<ul>
+  <li>Відмічається <strong>лише одна галочка</strong>: у блоці «Modificación desde situaciones de autorizaciones de residencia temporal que habiliten a trabajar», під рядком <em>«Desde autorización de residencia que lleve residiendo más de un año (artículo 191.3)»</em> → <strong>«A autorización de residencia y trabajo por cuenta ajena y propia»</strong>. Окремого варіанта «лише cuenta propia» для 191.3 немає — цей пункт охоплює обидва. Тимчасовий захист дозволяє працювати, тому блок «…que no habilitaban a trabajar» (191.4) — не ваш.</li>
+  <li>Решта галочок на сторінці 2 — порожні.</li>
+  <li>Місце й дата: місто, число, місяць словом іспанською, рік (<code class="v">ALICANTE, a 10 de NOVIEMBRE de 2026</code>). Якщо подаєте в інший день — змініть дату.</li>
+  <li><strong>DIRIGIDA A:</strong> <code class="v">OFICINA DE EXTRANJERÍA DE &lt;ваша провінція&gt;</code>; <strong>PROVINCIA</strong> — ваша провінція.</li>
+  <li><strong>Código DIR3</strong> — можна залишити порожнім: Mercurio підставляє код сам. Для довідки: для Аліканте Mercurio вписав <code class="v">EA0040683</code>.</li>
+  <li><strong>FIRMA</strong> — нічого не малюйте, файл підписується AutoFirma (<a href="#pidpys">розділ 7</a>); видимий підпис можна розмістити в цій рамці.</li>
+</ul>
+<div class="qa"><strong>Я живу тут 4,5 роки — це все одно «más de un año»?</strong> Так: «більше одного року» — це будь-який строк від року. Пункт 191.2 («menos de un año») — лише для тих, хто прожив менше року.</div>
+
+<h2 id="memoria">4. Memoria de actividad</h2>
+<p>Одна сторінка іспанською: хто ви, з якого часу autónomo, що саме робите, для кого, як рахуєте дохід. Вона пояснює інспектору, що показують решта документів. Шаблон на прикладі Оксани — замініть дані на свої:</p>
+<pre class="tpl">MEMORIA DE ACTIVIDAD
+
+Solicitante: Oksana Shevchenko — NIE Y0000000Z
+Domicilio: Calle Mayor nº 10, Bajo, Pta. 2, 03001 Alicante
+
+1. Situación como trabajadora autónoma
+Ejerzo como trabajadora por cuenta propia de forma ininterrumpida desde el 01/09/2022:
+alta en el Régimen Especial de Trabajadores Autónomos (RETA) y alta censal en la AEAT,
+epígrafe IAE [código y nombre]. Tributo en estimación directa simplificada (IRPF) y en
+régimen general de IVA[, y figuro inscrita en el Registro de Operadores Intracomunitarios].
+
+2. Descripción de la actividad
+Presto servicios profesionales de [descripción concreta: p. ej., control de calidad de
+software (QA), pruebas manuales y automatizadas].
+
+3. Cliente y forma de contratación
+Presto mis servicios a la empresa [ACME Solutions OÜ (Estonia)], mediante contrato de
+prestación de servicios vigente desde el [fecha]. La facturación es mensual.
+
+4. Lugar de trabajo y medios
+Trabajo en remoto desde mi domicilio, con medios propios (equipo informático y conexión
+a internet). La actividad no requiere local ni personal contratado.
+
+5. Ingresos
+Facturación media mensual en el periodo [abril–octubre 2026]: [X.XXX,XX] €, cobrada por
+transferencia bancaria. Las declaraciones trimestrales (modelos 130, 303 y 349) y anuales
+(IRPF, modelo 100) han sido presentadas y me encuentro al corriente de mis obligaciones
+con la AEAT y la Seguridad Social.
+
+[Lugar], a [fecha]
+Oksana Shevchenko — NIE Y0000000Z</pre>
+<div class="qa"><strong>Як порахувати середній дохід, щоб він «зійшовся»?</strong> Беріть <strong>фактури, виставлені</strong> у названому періоді (за датою фактури — так само, як їх рахують моделі 303 і 349), підсумуйте й поділіть на кількість. Якщо ви виставляєте фактуру на початку наступного місяця за попередній, то «квітень–жовтень» — це фактури з датами квітень–жовтень, тобто за роботу березень–вересень. Додайте до пакета саме ці фактури. Нашу першу суму довелося переписати, бо в неї потрапили не ті місяці.</div>
+<div class="qa"><strong>Можна «підправити» фактуру, щоб усе збіглося?</strong> Ні. Вже виставлену фактуру змінювати не можна, а подання недостовірних документів — підстава для відмови (ст. 85.3). Якщо цифри не збігаються — змініть текст меморії, а не фактуру.</div>
+<p>Підпишіть меморію AutoFirma (<a href="#pidpys">розділ 7</a>) і перевірте, що в ній заповнено дату.</p>
+
+<h2 id="tasa">5. Оплата та реєстрація таси 790-052</h2>
+<table>
+<tr><th>Питання</th><th>Відповідь</th></tr>
+<tr><td>Яку тасу платити?</td><td><strong>790, код 052, епіграф 2.5.2</strong> — «Modificación de la autorización de residencia temporal a autorización de residencia y trabajo». У листопаді 2026 — <strong>10,94 €</strong>.</td></tr>
+<tr><td>А таса 062?</td><td>Для пункту 191.3 Hoja 55 називає лише 062 з епіграфом 3.2.2, яку <strong>платить роботодавець</strong> (cuenta ajena). Для cuenta propia таса 062 там не вказана — <strong>не платіть її, доки офіс прямо не попросить</strong> (тоді буде 10 робочих днів).</td></tr>
+<tr><td>Коли платити?</td><td>За Hoja 55 обов'язок виникає при прийнятті заяви до розгляду (<em>admisión a trámite</em>), і є 10 робочих днів на оплату. Але можна заплатити й заздалегідь і додати квитанцію до заяви — так роблять найчастіше. Мінус: якщо заяву не приймуть, гроші доведеться повертати окремим запитом.</td></tr>
+<tr><td>Що потрібно?</td><td>Онлайн-оплата — цифровий сертифікат або Cl@ve і банківська картка. Без сертифіката можна заповнити й роздрукувати бланк і заплатити в банку.</td></tr>
+</table>
+<div class="ajena">тасу 052 (2.5.2) платите ви, тасу 062 (епіграф 3.2.2) — роботодавець.</div>
+
+<h3>Покроково</h3>
+<div class="step"><span class="step-num">1</span>Відкрийте <a href="https://mptmd.sede.gob.es/pagina?id=Tasa-052" target="_blank">mptmd.sede.gob.es/pagina?id=Tasa-052</a> і виберіть <strong>«Pagar y enviar la liquidación de la tasa 052 a través de Internet»</strong>. <span class="note">Інформаційні сторінки старого сайту sede.administracionespublicas.gob.es з осені 2026 не відкриваються, але сам сервіс оплати працює на старому домені — так і має бути.</span></div>
+
+<div class="step"><span class="step-num">2</span>З'явиться вікно про тасу 012 і TIE. Воно означає: <em>за саму картку (відбитки пальців) платять тасу 012 у поліції, а не 052</em>. Нас це не стосується — тисніть <strong>OK</strong>.
+<figure class="shot"><img src="../images/guide/052-popup-012.png" alt="Попередження про тасу 012"><figcaption>Попередження показують усім. Тисніть OK.</figcaption></figure></div>
+
+<div class="step"><span class="step-num">3</span><strong>Найважливіше:</strong> у списку <strong>REGLAMENTO EXTRANJERÍA</strong> виберіть <strong>RD1155/2024</strong>. За замовчуванням стоїть «RD 316/2026 (Regularización Extraordinaria 2026)» — з ним епіграф 2.5.2 <strong>неактивний (не клікається)</strong>. Інший браузер чи режим інкогніто не допоможуть — потрібно змінити саме це поле.
+<figure class="shot"><img src="../images/guide/052-reglamento.png" alt="Список REGLAMENTO EXTRANJERÍA"><figcaption>Виберіть RD1155/2024. Під списком — карта: клікніть свою провінцію.</figcaption></figure></div>
+
+<div class="step"><span class="step-num">4</span>Клікніть на карті свою провінцію і перевірте надпис <strong>«Provincia: …»</strong> над картою — коли водите мишею, він змінюється, тож переконайтеся, що там саме ваша. Підтвердіть.</div>
+
+<div class="step"><span class="step-num">5</span>Ім'я, NIE і адресу система бере з вашого сертифіката — полів для них може не бути. Вам лишається вписати <strong>e-mail</strong> і поставити галочку біля <strong>2.5.2</strong>. Перевірте на підсумковому екрані, що там ваше ім'я (а не, наприклад, чоловіка, якщо в браузері кілька сертифікатів).</div>
+
+<div class="step"><span class="step-num">6</span>Оплатіть карткою. Збережіть <strong>«Justificante de pago»</strong> — PDF Agencia Tributaria з номером <strong>NRC</strong>. Назва для файлу: <code class="v">Justificante_Tasa_052.pdf</code>.</div>
+
+<div class="step"><span class="step-num">7</span>Не закривайте сторінку! Після оплати з'явиться «PAYMENT MADE CORRECTLY» і нагадування, що оплату <strong>треба зареєструвати</strong>. Натисніть <strong>«Click here to carry out Online Registration of your settlement»</strong>.
+<figure class="shot"><img src="../images/guide/052-pago-ok.png" alt="Оплата успішна, потрібно зареєструвати"><figcaption>Оплата пройшла, але ще не зареєстрована.</figcaption></figure></div>
+
+<div class="step"><span class="step-num">8</span>Форма реєстрації. Заповніть так:
+<ul>
+  <li><strong>Second surname:</strong> якщо там «NULL» — <strong>зітріть</strong>, нехай буде порожньо.</li>
+  <li><strong>Nationality:</strong> за замовчуванням «Spain» — виберіть <strong>Ucrania</strong>.</li>
+  <li><strong>St/Sq/Ave</strong> (тип вулиці) — Calle тощо; <strong>name</strong> — назва вулиці; <strong>No.</strong> — номер будинку; <strong>Floor</strong> — поверх; <strong>Door</strong> — двері; <strong>Municipality, Province, Post Code, Telephone</strong> — з падрону.</li>
+  <li><strong>Чекбокси епіграфів сірі</strong> — це нормально: галочка на 2.5.2 вже стоїть з оплати.</li>
+  <li><strong>Record file no.</strong> (номер справи) — залиште порожнім: справи ще немає. Сайт попередить, що тоді квитанцію треба подати в офіс — ми додаємо її до заяви в Mercurio.</li>
+  <li><strong>Date effective / Expiry date</strong> позначені зірочкою, але реєстрація пройшла і без них. Якщо форма їх вимагатиме — сьогоднішня дата і дата закінчення вашої картки ТЗ (календар у форматі мм/дд/рррр — не переплутайте день і місяць).</li>
+  <li><strong>Lugar y fecha, NRC, сума</strong> — підставлені автоматично.</li>
+</ul>
+<figure class="shot"><img src="../images/guide/052-registro-1.png" alt="Форма реєстрації таси, верх"><figcaption>Верх форми: зітріть NULL, змініть Spain на Ucrania, заповніть адресу.</figcaption></figure>
+<figure class="shot"><img src="../images/guide/052-registro-2.png" alt="Форма реєстрації таси, низ"><figcaption>Низ форми: 2.5.2 уже відмічено, Record file no. — порожньо, далі «Registrar».</figcaption></figure>
+Натисніть <strong>Registrar</strong>.</div>
+
+<div class="step"><span class="step-num">9</span>З'явиться «Su solicitud se ha registrado correctamente» і прохання завантажити «justificante de registro» кнопкою «Descargar» — <strong>такої кнопки на сторінці немає</strong>. Натисніть <strong>Print</strong> і в полі «Destination / Принтер» виберіть <strong>«Save as PDF»</strong>. Назва: <code class="v">Justificante_registro_Tasa_052.pdf</code>.
+<figure class="shot"><img src="../images/guide/052-registrado.png" alt="Реєстрацію таси завершено"><figcaption>Реєстрацію завершено. Зберігайте через Print → Save as PDF.</figcaption></figure>
+У PDF мають бути ваші дані, галочка на 2.5.2, сума, NRC і внизу ліворуч — <strong>номер реєстрації REGAGE…</strong>. <span class="note">На екрані в полі Nationality може й далі висіти «Spain» — дивіться на PDF: у нашому випадку там це поле порожнє, і це не впливає на оплату, бо вона прив'язана до NIE і NRC.</span></div>
+
+<h2 id="indice">6. Índice — перелік документів</h2>
+<p>Одна сторінка іспанською: хто подає, яка процедура, в який офіс, і пронумерований перелік усіх файлів у тому порядку, в якому ви їх завантажите. Якщо в документах є щось неочевидне (наприклад, інше прізвище дитини), поясніть це тут.</p>
+<figure class="shot"><img src="../images/guide/indice-ejemplo.png" alt="Приклад índice"><figcaption>Índice Оксани (вигадані дані). Підписується AutoFirma.</figcaption></figure>
+
+<h2 id="pidpys">7. Підписання AutoFirma</h2>
+<p>Підписати треба документи, які ви складаєте самі: <strong>EX-26, memoria, índice</strong>. Довідки з AEAT, Seguridad Social, падрон, антецеденти вже мають підпис установи — їх не чіпаємо.</p>
+<ol>
+  <li>Встановіть <a href="https://firmaelectronica.gob.es/descargas" target="_blank">AutoFirma</a> (остання версія — Mercurio без неї не працює).</li>
+  <li>Відкрийте AutoFirma → «Seleccionar ficheros a firmar» → виберіть PDF.</li>
+  <li>Якщо хочете, щоб підпис було видно на сторінці, увімкніть «Hacer la firma visible dentro del PDF» і виділіть мишею місце (для EX-26 — рамка «FIRMA DEL SOLICITANTE» на сторінці 2). Це не обов'язково: електронний підпис охоплює весь файл незалежно від того, де він показаний.</li>
+  <li>«Firmar» → виберіть свій сертифікат → збережіть як <code class="v">…_signed.pdf</code>.</li>
+</ol>
+<div class="qa"><strong>Помітили помилку вже після підпису?</strong> Підписаний файл не редагуйте — підпис зламається. Виправте вихідний файл і підпишіть його заново.</div>
+
+<h2 id="perevirka">8. Фінальна перевірка папки</h2>
+<ul class="checklist">
+  <li>Усі файли — PDF, кожен до 6 МБ, у назвах лише дозволені символи</li>
+  <li>EX-26, memoria, índice — <strong>підписані</strong> (_signed), а непідписані прибрано</li>
+  <li>Адреса однакова в EX-26, падроні, situación censal</li>
+  <li>Сума в меморії = сума фактур, доданих до пакета, ÷ кількість місяців</li>
+  <li>Є дві квитанції таси 052: оплата і реєстрація</li>
+  <li>Є довідка про навчання для кожної дитини 6–16 років</li>
+  <li>У папці немає зайвого (zip-архівів, чернеток, документів, що не стосуються справи)</li>
+  <li>Під рукою: номер паспорта, NIE, адреса, телефон, e-mail, ваш сертифікат у браузері, ~30–40 хвилин</li>
+</ul>
+
+<a class="next-page" href="podacha-mercurio.html">Далі → Крок 2. Подача через Mercurio</a>
+
+<div class="page-footer">
+  Складено за реальною подачею (листопад 2026), Hoja informativa 55 Ministerio de Inclusión, RD 1155/2024 (ст. 85, 86, 191.3), посібником користувача Mercurio та бланком EX-26 (версія листопада 2026). Приклад «Оксана Шевченко» вигаданий; скріншоти — з реальної подачі з прихованими персональними даними.
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Подача заяви EX-26 через Mercurio — покроково</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-bar">
+    <a href="../index.html" class="nav-logo">Головна</a>
+    <nav class="nav-links">
+      <a href="cuenta-propia.html">Бізнес та самозайняті</a>
+      <a href="cuenta-ajena.html">Трудовий контракт</a>
+      <a href="arraigo.html">Осілість / Arraigo</a>
+      <a href="dity.html">Діти</a>
+      <a href="dokumenty.html" class="nav-docs">Документи</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner">
+  <h1>Крок 2 з 2. Подача заяви через Mercurio: кожен екран і кожне поле</h1>
+  <div class="badges">
+    <span class="badge">Mercurio V. 4.1.6</span>
+    <span class="badge">EX-26, ст. 191.3</span>
+    <span class="badge">Перевірено на реальній подачі, листопад 2026</span>
+  </div>
+</div>
+
+<div class="container">
+
+<div class="disclaimer">
+  <strong>Спершу — <a href="pidgotovka-dokumentiv.html">Крок 1: підготовка документів</a>.</strong> Ця сторінка — для моменту, коли всі файли вже лежать в одній папці, підписані й перевірені. Скріншоти — з реальної подачі, персональні дані на них розмиті. Приклад — вигадана Оксана Шевченко, autónoma з Аліканте (див. Крок 1).
+</div>
+
+<h2>Перед стартом</h2>
+<ul class="checklist">
+  <li>Ви фізично в Іспанії — на одному з екранів це треба буде підтвердити під вашу відповідальність</li>
+  <li>Встановлена <strong>остання версія AutoFirma</strong> (<a href="https://firmaelectronica.gob.es/descargas" target="_blank">завантажити</a>) — без неї Mercurio не дасть подати</li>
+  <li>У браузері встановлено ваш цифровий сертифікат (або є Cl@ve)</li>
+  <li>Під рукою: паспорт, NIE, адреса з падрону, телефон, e-mail і заповнений EX-26 як шпаргалка</li>
+  <li>Є 30–40 хвилин без поспіху: завантаження ~20 файлів по одному займає час</li>
+</ul>
+
+<div class="toc">
+<strong>Кроки</strong>
+<ol>
+  <li><a href="#vkhid">Вхід у Mercurio</a></li>
+  <li><a href="#forma">Онлайн-форма: 4 вкладки</a></li>
+  <li><a href="#zavantazhennia">Завантаження документів</a></li>
+  <li><a href="#pidpys">Підпис і реєстрація</a></li>
+  <li><a href="#pislia">Після подачі</a></li>
+  <li><a href="#faq">Питання, які виникали</a></li>
+</ol>
+</div>
+
+<h2 id="vkhid">1. Вхід у Mercurio</h2>
+
+<div class="step"><span class="step-num">1</span>Відкрийте <a href="https://mercurio.delegaciondelgobierno.gob.es/mercurio/" target="_blank">mercurio.delegaciondelgobierno.gob.es/mercurio/</a>. Відкриється вітальна сторінка — у рамці міністерство саме підтверджує, що з 8 квітня це нова адреса Mercurio. Натисніть <strong>CONTINUAR</strong>.
+<figure class="shot"><img src="../images/guide/mercurio-01-bienvenida.png" alt="Вітальна сторінка Mercurio"><figcaption>Вітальна сторінка. Посилання «aquí» веде на офіційний посібник користувача.</figcaption></figure></div>
+
+<div class="step"><span class="step-num">2</span>Виберіть <strong>«Individual»</strong> — ви подаєте від себе, без представника (варіанти для колективних подач і колегій — не для вас).</div>
+
+<div class="step"><span class="step-num">3</span>Відкриється державна система входу <strong>Cl@ve</strong>: виберіть вхід із сертифікатом (або Cl@ve PIN / Permanente) і підтвердіть сертифікат у вікні браузера.
+<div class="qa"><strong>А якщо замість вибору сертифіката — червоний хрестик і «202002 - invalid.connector.samlrequest … untrusted.certificate»?</strong> Це збій на боці сервера, не вашого сертифіката: Cl@ve не довіряє запиту від Mercurio, тому до вибору сертифіката справа навіть не доходить. Інший браузер чи інкогніто не допоможуть. Спробуйте через кілька годин — у нашому випадку того ж дня все запрацювало.</div>
+<figure class="shot"><img src="../images/guide/mercurio-error-clave.png" alt="Помилка Cl@ve 202002"><figcaption>Помилка 202002 — чекайте, поки виправлять.</figcaption></figure></div>
+
+<div class="step"><span class="step-num">4</span>Після входу вгорі праворуч з'являться «AC. INDIVIDUAL», ваше ім'я та NIE. На сторінці «Opciones disponibles» натисніть праву кнопку <strong>«CONTINUAR PRESENTACIÓN»</strong> (Presentar solicitud o aportar documentos). Ліва кнопка — щоб пізніше дізнатися номер справи.
+<figure class="shot"><img src="../images/guide/mercurio-02-opciones.png" alt="Opciones disponibles"><figcaption>Права кнопка — нова подача; ліва знадобиться після подачі.</figcaption></figure></div>
+
+<div class="step"><span class="step-num">5</span>У вікні «Opciones» відмітьте <strong>«Presentar nueva solicitud»</strong>, у списку поруч виберіть <strong>свою провінцію</strong> → CONTINUAR.
+<ul>
+  <li>«Presentar renovación» — ні: у вас не продовження, а перехід на інший вид дозволу (за ст. 191.3 він вважається <em>початковим</em>).</li>
+  <li>«Solicitud aplicación disposición transitoria segunda RD 1155/2024» — ні: це для заяв за старим регламентом.</li>
+  <li>«Aportar documentos a expedientes» — знадобиться пізніше, якщо офіс попросить донести документ.</li>
+</ul>
+<figure class="shot"><img src="../images/guide/mercurio-03-nueva.png" alt="Вікно Opciones"><figcaption>«Presentar nueva solicitud» + провінція.</figcaption></figure></div>
+
+<div class="step"><span class="step-num">6</span>Зі списку «Solicitudes permitidas en la provincia de …» виберіть останній пункт — <strong>«EX26 - Solicitud de modificación de autorización de residencia o estancia»</strong>.
+<div class="qa"><strong>Чому не EX07 («residencia temporal y trabajo por cuenta propia»)?</strong> EX07 — для першої заяви на такий дозвіл, зазвичай з-за кордону. Ви ж змінюєте чинний дозвіл (тимчасовий захист) — це модифікація, тобто EX26. <span class="note">EX03 — так само не підходить для cuenta ajena: теж EX26.</span></div></div>
+
+<h2 id="forma">2. Онлайн-форма: 4 вкладки</h2>
+<p>Форма — це той самий EX-26, розбитий на вкладки: <em>TIPO DE AUTORIZACIÓN → DATOS DEL EXTRANJERO/A → DATOS DEL EMPLEADOR/A → DOMICILIO DE NOTIFICACIÓN</em>. Кожна закінчується кнопкою CONTINUAR. Поля із зірочкою (*) — обов'язкові.</p>
+
+<h3>Вкладка 1. TIPO DE AUTORIZACIÓN</h3>
+<div class="step"><span class="step-num">7</span>Відмітьте <strong>одну</strong> радіокнопку: у першому блоці («…QUE HABILITEN A TRABAJAR…»), під рядком <em>«Desde autorización de residencia que lleve residiendo más de un año (artículo 191.3)»</em> → <strong>«A autorización de residencia y trabajo por cuenta ajena y propia»</strong>.
+<figure class="shot"><img src="../images/guide/mercurio-05-tipo-1.png" alt="Тип авторизації"><figcaption>Потрібна радіокнопка — друга зверху, під 191.3.</figcaption></figure>
+Прокрутіть донизу. Чекбокс <strong>«NO CONSIENTO la consulta sobre mis datos y documentos que se hallen en poder de la Administración»</strong> — <strong>залиште порожнім</strong>. Тоді офіс сам перевірить вашу податкову, Seguridad Social і судимість. Якщо поставите галочку — усі ці довідки доведеться додати самостійно.
+<figure class="shot"><img src="../images/guide/mercurio-05-tipo-2.png" alt="Низ вкладки, NO CONSIENTO"><figcaption>«NO CONSIENTO» — без галочки. Далі CONTINUAR.</figcaption></figure>
+<div class="qa"><strong>Я тут 4,5 роки — однаково «más de un año»?</strong> Так. «Більше року» — будь-який строк від року; 191.2 — лише для тих, хто прожив менше року.</div>
+<div class="ajena">та сама радіокнопка — пункт 191.3 охоплює і найм, і роботу на себе.</div></div>
+
+<h3>Вкладка 2. DATOS DEL EXTRANJERO/A</h3>
+<div class="step"><span class="step-num">8</span>Ті самі дані, що в розділі 1 паперового EX-26:
+<table>
+<tr><th>Поле</th><th>Що вписати (приклад Оксани)</th></tr>
+<tr><td>* Pasaporte / * N.I.E.</td><td><code class="v">FX000000</code> / <code class="v">Y0000000Z</code> (NIE — одним рядком)</td></tr>
+<tr><td>* 1º Apellido / 2º Apellido</td><td>SHEVCHENKO / порожньо</td></tr>
+<tr><td>* Nombre</td><td>OKSANA</td></tr>
+<tr><td>* Sexo / * Estado civil</td><td>списки: Mujer / Casada</td></tr>
+<tr><td>* Fecha de nacimiento</td><td>15/04/1985</td></tr>
+<tr><td>* Lugar de nacimiento</td><td>KYIV (як у паспорті)</td></tr>
+<tr><td>* País de nacimiento / * Nacionalidad</td><td>списки: Ucrania / Ucrania</td></tr>
+<tr><td>Nombre del padre / de la madre</td><td>TARAS / OLHA</td></tr>
+<tr><td>Persona tutelada</td><td>не відмічати</td></tr>
+<tr><td>* Tipo de vía</td><td>список: Calle</td></tr>
+<tr><td>* Domicilio</td><td>MAYOR — лише назва вулиці (див. застереження нижче)</td></tr>
+<tr><td>* Numero / Piso</td><td>10 / зі списку (найближчий до «Bajo»)</td></tr>
+<tr><td>Letra</td><td><strong>номер дверей (puerta)</strong>: 2 — окремого поля для дверей немає, а Letra його приймає</td></tr>
+<tr><td>Escalera, Bloque, km</td><td>якщо є в адресі; інакше порожньо</td></tr>
+<tr><td>* Provincia</td><td>уже стоїть провінція подачі</td></tr>
+<tr><td>* Municipio / * Localidad</td><td>списки: ваше місто (обидва)</td></tr>
+<tr><td>* Código Postal</td><td>03001</td></tr>
+<tr><td>Teléfono / Teléfono móvil / E-mail</td><td>достатньо мобільного й e-mail</td></tr>
+<tr><td>Representante legal</td><td>порожньо</td></tr>
+<tr><td>«SI Hijas/os a cargo en edad de escolarización en España»</td><td><strong>галочка</strong>, якщо є діти 6–16 років</td></tr>
+</table>
+<div class="qa"><strong>Де вписати номер дверей (puerta)?</strong> Окремого поля немає — пишіть його в поле <strong>Letra</strong>, воно номер приймає. <strong>Не дописуйте</strong> двері в поле Domicilio: ми спробували «, PUERTA 88», і в згенерованому EX-26 лишилося тільки «CALLE &lt;назва&gt;» — кома і все після неї зникли. Адресу однаково перевірте в PDF-чернетці на кроці 18. Якщо номер дверей загубився — не страшно: повна адреса є в падроні й у підписаному паперовому EX-26, який ви додаєте як документ, а сповіщення приходять в електронну скриньку.</div>
+<figure class="shot"><img src="../images/guide/mercurio-06-extranjero-1.png" alt="Дані іноземця, верх"><figcaption>Верх вкладки.</figcaption></figure>
+<figure class="shot"><img src="../images/guide/mercurio-06-extranjero-2.png" alt="Дані іноземця, низ"><figcaption>Низ вкладки: адреса, телефони, представник (порожньо), галочка про дітей.</figcaption></figure></div>
+
+<h3>Вкладка 3. DATOS DEL EMPLEADOR/A</h3>
+<div class="step"><span class="step-num">9</span>На цій вкладці <strong>немає обов'язкових полів</strong> — її можна пропустити. Але раджу вписати <strong>свої дані як autónomo</strong>: пункт 191.3 звучить як «cuenta ajena <em>y propia</em>», а це єдине місце в онлайн-формі, де видно, що ви працюєте на себе.
+<table>
+<tr><th>Поле</th><th>Що вписати</th></tr>
+<tr><td>Nombre/Razón Social</td><td>ваше ім'я та прізвище: OKSANA SHEVCHENKO</td></tr>
+<tr><td>DNI/NIE/PAS + Documento</td><td>у списку — NIE (за замовчуванням стоїть NIF/DNI!), номер <code class="v">Y0000000Z</code></td></tr>
+<tr><td>Actividad</td><td>найближче до вашої діяльності, напр. «Programación, consultoría y otras actividades relacionadas con la informática»</td></tr>
+<tr><td>Ocupación</td><td>найближча професія зі списку (для ІТ — аналітики / програмісти / техніки)</td></tr>
+<tr><td>Domicilio social del centro de trabajo</td><td>якщо працюєте з дому — домашня адреса, як у вкладці 2</td></tr>
+<tr><td>Representante legal</td><td>порожньо</td></tr>
+</table>
+<figure class="shot"><img src="../images/guide/mercurio-07-empleador-1.png" alt="Дані роботодавця, верх"><figcaption>Зірочок немає — поля необов'язкові.</figcaption></figure>
+<div class="ajena">тут обов'язково дані <strong>роботодавця</strong>: назва компанії, тип документа NIF/CIF і номер, Actividad (галузь компанії), Ocupación (ваша посада), адреса робочого місця, телефон, e-mail. Усе це є у трудовому договорі.</div></div>
+
+<h3>Вкладка 4. DOMICILIO DE NOTIFICACIÓN</h3>
+<div class="step"><span class="step-num">10</span>Натисніть угорі кнопку <strong>«Domicilio del solicitante»</strong> — адреса підставиться з вкладки 2. Перевірте:
+<ul>
+  <li><strong>* Nombre/Razón Social</strong> — ваше ім'я;</li>
+  <li><strong>* DNI/NIE/PAS</strong> — у списку <strong>NIE</strong> (стоїть NIF/DNI) і номер;</li>
+  <li>мобільний і e-mail.</li>
+</ul>
+Поставте галочку <strong>«Consiento que las comunicaciones y notificaciones se realicen mediante puesta a disposición en sede electrónica…»</strong>: рішення і запити прийдуть в електронну скриньку, а не поштою. Відкривати їх треба буде <strong>тим самим сертифікатом</strong>, з яким подаєте.
+<figure class="shot"><img src="../images/guide/mercurio-08-notificacion.png" alt="Адреса для сповіщень"><figcaption>Кнопка «Domicilio del solicitante» заповнює адресу за вас.</figcaption></figure></div>
+
+<div class="step"><span class="step-num">11</span>Після CONTINUAR вискочить «Confirmación de protección de datos» — стандартне повідомлення про обробку персональних даних. <strong>Aceptar</strong>.
+<figure class="shot"><img src="../images/guide/mercurio-09-rgpd.png" alt="Захист даних"><figcaption>Aceptar.</figcaption></figure></div>
+
+<div class="step"><span class="step-num">12</span>Сторінка «Opciones de presentación» схожа на попередню, але тепер угорі є <strong>«Id formulario inicial: I0…»</strong> — це номер вашої заяви. <strong>Запишіть його</strong>: разом із датою подачі він потрібен, щоб потім дізнатися номер справи. Натисніть праву кнопку <strong>«PRESENTACIÓN ELECTRÓNICA»</strong>. Ліва («Descargar solicitud») — для паперової подачі в офісі; autónomos зобов'язані подавати електронно.
+<figure class="shot"><img src="../images/guide/mercurio-10-presentacion.png" alt="Opciones de presentación"><figcaption>Права кнопка. Id formulario (розмитий) — запишіть.</figcaption></figure></div>
+
+<div class="step"><span class="step-num">13</span>Декларація <em>«DECLARO bajo mi responsabilidad, ante las Autoridades españolas, que el sujeto legitimado para presentar esta solicitud se encuentra en territorio español»</em> — ви підтверджуєте, що зараз в Іспанії. Відмітьте і продовжуйте.</div>
+
+<h2 id="zavantazhennia">3. Завантаження документів</h2>
+<div class="step"><span class="step-num">14</span>Сторінка «Presentación documentación». Вгорі — перелік: обов'язкові для вашого пункту <em>Pasaporte</em> і <em>Recursos económicos</em>, а також «можливо потрібні» (таса, ліцензії, інвестиції, платоспроможність компанії, навчання дітей, трудовий договір, інші). Нижче — правила: <strong>pdf, jpg, tif, gif; до 6 МБ; обмежені символи в назві</strong>.
+<figure class="shot"><img src="../images/guide/mercurio-11-documentos.png" alt="Presentación documentación"><figcaption>Перелік документів і правила для файлів.</figcaption></figure>
+Для кожного файлу: <strong>Examinar…</strong> → виберіть файл → у списку <strong>Descripción</strong> — тип → <strong>ADJUNTAR DOCUMENTO</strong>. Файл з'явиться в таблиці «Documentos adjuntados» нижче. CONTINUAR — лише коли завантажено <strong>все</strong>.</div>
+
+<div class="step"><span class="step-num">15</span><strong>Головне правило списку Descripción:</strong> кожен конкретний тип приймає <strong>тільки один файл</strong>. Спроба додати другий дає помилку <em>«La descripción seleccionada del documento a adjuntar ya ha sido aportado, solo puede adjuntar un documento por cada documento obligatorio»</em>. Багато файлів приймає лише <strong>«Otros documentos que desee aportar»</strong>. Тому під конкретний тип ставимо один головний файл, а все інше — як «Otros».
+<figure class="shot"><img src="../images/guide/mercurio-13-tipos.png" alt="Список типів документів"><figcaption>Усі варіанти списку Descripción для EX26 / 191.3.</figcaption></figure>
+<table>
+<tr><th>Файл</th><th>Тип у списку Descripción</th></tr>
+<tr><td>Паспорт</td><td>Pasaporte, título de viaje o cédula de inscripción…</td></tr>
+<tr><td>Квитанція про оплату таси 052</td><td>Justificante del abono de la tasa…</td></tr>
+<tr><td>Memoria de actividad (підписана)</td><td>Recursos económicos</td></tr>
+<tr><td>Довідка про навчання дитини (якщо дітей двоє — друга як «Otros»)</td><td>En su caso, informe sobre escolarización de menores…</td></tr>
+<tr><td>Усе інше</td><td>Otros documentos que desee aportar</td></tr>
+</table>
+<p><strong>Не вибирайте</strong> для cuenta propia: «Contrato de trabajo firmado por empleador e interesado» (у вас договір послуг, а не трудовий), «Solvencia económica de la empresa» (про компанію-роботодавця), «Relación de autorizaciones o licencias…» та «Documentación … inversión prevista…» (для нового бізнесу; ви продовжуєте вже наявну діяльність).</p>
+<div class="ajena">трудовий договір — тип «Contrato de trabajo firmado por empleador e interesado»; vida laboral або nóminas — «Recursos económicos»; решта — «Otros».</div></div>
+
+<div class="step"><span class="step-num">16</span>Коли вибрано «Otros documentos», з'являється обов'язкове поле <strong>«* Otro documento»</strong> — короткий опис <strong>саме цього файлу</strong> (не наступного).
+<figure class="shot"><img src="../images/guide/mercurio-12-otros.png" alt="Поле Otro documento"><figcaption>Для «Otros» — короткий опис файлу.</figcaption></figure>
+<div class="qa"><strong>Поле «з'їдає» літери!</strong> Воно не приймає частину символів (наголоси, «º», дефіс, кома тощо) і непомітно викидає літери поруч із ними: у нас вийшло «TASA 79 052», «ROTECCION», «SITUACI CENSAL». Пишіть <strong>лише латинські літери без наголосів, цифри й пробіли</strong> і перевіряйте рядок у таблиці після кожного завантаження. Помилка суто косметична — інспектор бачить і файл, — але виправити легко: червоний хрестик видаляє рядок, і файл можна завантажити знову.</div>
+Готові описи без проблемних символів:
+<table>
+<tr><th>Файл</th><th>Текст для «Otro documento»</th></tr>
+<tr><td>Índice</td><td><code class="v">INDICE DE DOCUMENTOS</code></td></tr>
+<tr><td>EX-26 (підписаний)</td><td><code class="v">IMPRESO DE SOLICITUD EX26 FIRMADO</code></td></tr>
+<tr><td>Картка ТЗ</td><td><code class="v">TIE VIGENTE PROTECCION TEMPORAL</code></td></tr>
+<tr><td>Реєстрація таси</td><td><code class="v">JUSTIFICANTE DE REGISTRO TASA 790 052</code></td></tr>
+<tr><td>Падрон</td><td><code class="v">CERTIFICADO DE EMPADRONAMIENTO</code></td></tr>
+<tr><td>Situación censal</td><td><code class="v">CERTIFICADO DE SITUACION CENSAL AEAT</code></td></tr>
+<tr><td>Vida laboral</td><td><code class="v">INFORME DE VIDA LABORAL</code></td></tr>
+<tr><td>Антецеденти</td><td><code class="v">CERTIFICADO DE ANTECEDENTES PENALES</code></td></tr>
+<tr><td>Договір</td><td><code class="v">CONTRATO DE SERVICIOS 15 CON ACME SOLUTIONS OU</code></td></tr>
+<tr><td>Adenda / переклад</td><td><code class="v">ADENDA AL CONTRATO 15 CON TRADUCCION AL ESPANOL</code></td></tr>
+<tr><td>Renta</td><td><code class="v">DECLARACION IRPF 2025</code> (і т. д. для кожного року)</td></tr>
+<tr><td>390</td><td><code class="v">MODELO 390 2025</code></td></tr>
+<tr><td>130/303/349</td><td><code class="v">MODELOS 130 303 Y 349 1T 2T 3T 2026</code></td></tr>
+<tr><td>Фактури</td><td><code class="v">FACTURAS DE ABRIL A OCTUBRE 2026</code></td></tr>
+</table></div>
+
+<div class="step"><span class="step-num">17</span>Перевірте таблицю «Documentos adjuntados»: кількість рядків = кількість пунктів в índice, у кожного правильний тип і опис. Колонка HASH — контрольна сума файлу, на неї не зважайте. Потім <strong>CONTINUAR</strong>.
+<figure class="shot"><img src="../images/guide/mercurio-14-lista.png" alt="Список завантажених документів"><figcaption>Реальний список із 20 файлів (назви з персональними даними розмиті). Видно й «з'їдені» літери в описах.</figcaption></figure></div>
+
+<h2 id="pidpys">4. Підпис і реєстрація</h2>
+<div class="step"><span class="step-num">18</span>Сторінка «Registro de entrada». Натисніть <strong>«Descargar documento PDF con los datos a registrar»</strong> і перегляньте PDF перед підписом.
+<ul>
+  <li>Це <strong>EX-26, який Mercurio згенерував</strong> із ваших відповідей. Файлів у ньому <strong>немає</strong> — так і має бути; список файлів ви вже перевірили на кроці 17.</li>
+  <li>Перевірте: ім'я, NIE, дату народження, адресу (чи не зник номер дверей), галочку 191.3, «діти — SÍ». У розділі 3 («representante») з'являться ваші ж дані — так система позначає, хто подає; це нормально.</li>
+  <li>Внизу Mercurio сам впише адресата («SR/SRA DELEGADO/A O SUBDELEGADO/A DEL GOBIERNO») і код DIR3 вашої провінції.</li>
+</ul>
+<figure class="shot"><img src="../images/guide/mercurio-15-firmar.png" alt="Registro de entrada"><figcaption>Спершу «Descargar documento PDF…» для перевірки, потім «FIRMAR Y REGISTRAR».</figcaption></figure>
+Якщо все гаразд — <strong>FIRMAR Y REGISTRAR</strong>. Відкриється AutoFirma; сертифікат можуть попросити <strong>двічі</strong>. Усі попередження приймайте (Ejecutar, Aceptar, Sí).
+<div class="qa"><strong>Знайшли помилку в чернетці?</strong> Кнопка VOLVER повертає назад, але є ризик, що завантажені файли доведеться додавати знову. Дрібниці (наприклад, номер дверей, який є в падроні та підписаному EX-26) не варті цього.</div></div>
+
+<div class="step"><span class="step-num">19</span>«Presentación finalizada — Su solicitud ha sido aceptada y registrada de forma correcta». Завантажте <strong>обидва</strong> файли:
+<ul>
+  <li><strong>DESCARGAR RESGUARDO</strong> — <strong>офіційний доказ подачі</strong> («SI es válido»): номер реєстрації REGAGE…, дата й час, офіс, і список усіх файлів, що дійшли. Назвіть, напр., <code class="v">Resguardo_presentacion_EX26.pdf</code> і збережіть ще й у хмару.</li>
+  <li><strong>DESCARGAR PRESENTACIÓN</strong> — копія заяви зі штампом реєстрації, для себе («NO es válido» як доказ).</li>
+</ul>
+<figure class="shot"><img src="../images/guide/mercurio-16-final.png" alt="Подачу завершено"><figcaption>Ліва кнопка — головний документ.</figcaption></figure>
+Відкрийте resguardo і перевірте, що в розділі «Adjuntos» стільки ж файлів, скільки в índice. Після цього сторінку можна закривати.</div>
+
+<h2 id="pislia">5. Після подачі</h2>
+<table>
+<tr><th>Що</th><th>Як і коли</th></tr>
+<tr><td>Номер справи (expediente)</td><td>З'являється через кілька днів. Mercurio → Individual → вхід → ліва кнопка «CONTINUAR CONSULTA DE SOLICITUD EXISTENTE». Знадобляться: Id formulario (I0…), дата подачі, громадянство, рік народження.</td></tr>
+<tr><td>Статус справи</td><td>З номером справи — в <a href="https://infoext2.delegaciondelgobierno.gob.es/infoext2/" target="_blank">infoext2</a>.</td></tr>
+<tr><td>Сповіщення</td><td>Раз на тиждень заходьте в <a href="https://dehu.redsara.es/" target="_blank">Dehú</a> (тим самим сертифікатом). Якщо офіс попросить донести документ (<em>requerimiento</em>), зазвичай дають 10 днів; додати документ можна через Mercurio → «Aportar documentos a expedientes». <span class="note">У нашому resguardo каналом сповіщень реєстру вказано «Correo», хоч згоду на електронні сповіщення дано, тож поглядайте й у поштову скриньку.</span></td></tr>
+<tr><td>Таса 062</td><td>Лише якщо офіс прямо попросить (див. Крок 1).</td></tr>
+<tr><td>Строк рішення</td><td>3 місяці від реєстрації; якщо відповіді немає — це вважається відмовою (негативне мовчання), яку можна оскаржити. Поки триває розгляд, ви працюєте як і раніше.</td></tr>
+<tr><td>Після схвалення</td><td>Спершу подайте відмову від тимчасового захисту (<em>renuncia</em>) і збережіть квитанцію, потім запишіться на відбитки пальців для нової TIE (таса 790-012 у поліції, протягом 1 місяця) — див. <a href="cuenta-propia.html">кроки 11–12</a>.</td></tr>
+</table>
+
+<h2 id="faq">6. Питання, які виникали</h2>
+<div class="qa"><strong>Чекбокс у формі таси не клікається.</strong> У списку REGLAMENTO EXTRANJERÍA вибрано RD 316/2026 — змініть на RD1155/2024 (<a href="pidgotovka-dokumentiv.html#tasa">Крок 1, таса</a>).</div>
+<div class="qa"><strong>Старі посилання на sede.administracionespublicas.gob.es не відкриваються.</strong> Інформаційні сторінки міністерства переїхали на mptmd.sede.gob.es, Mercurio — на mercurio.delegaciondelgobierno.gob.es. Окремі сервіси (оплата тас, сам Mercurio всередині) досі показують старий домен в адресному рядку — це нормально.</div>
+<div class="qa"><strong>Чи треба окремо завантажувати EX-26, якщо Mercurio його генерує?</strong> Не обов'язково. Ми додали підписаний бланк як «Otros» — це не шкодить і зберігає повну адресу.</div>
+<div class="qa"><strong>Чому вкладка «Empleador» у Mercurio заповнена, а в паперовому EX-26 розділ 2 порожній?</strong> Для cuenta propia роботодавця немає; онлайн ми вписали себе, щоб підкреслити роботу на себе. Розбіжність ні на що не впливає.</div>
+<div class="qa"><strong>Чи можна подавати в неробочий день чи ввечері?</strong> Mercurio працює цілодобово. Подача в неробочий день вважається зробленою на початку наступного робочого (так написано в resguardo).</div>
+
+<a class="next-page" href="pidgotovka-dokumentiv.html">← Назад до Кроку 1. Підготовка документів</a>
+
+<div class="page-footer">
+  Складено за реальною подачею через Mercurio V. 4.1.6 (10.11.2026, Аліканте), посібником користувача Mercurio і Hoja informativa 55. Скріншоти — з реальної подачі, персональні дані розмиті; приклад «Оксана Шевченко» вигаданий. Інтерфейс Mercurio може змінитися — якщо щось не збігається, звіряйтеся з <a href="https://mercurio.delegaciondelgobierno.gob.es/mercurio/" target="_blank">офіційним посібником</a>.
+</div>
+
+</div>
+</body>
+</html>
