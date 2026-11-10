@@ -142,6 +142,24 @@ a{color:var(--navy);}
   font-family:Arial,sans-serif;
 }
 
+/* великі кнопки «Крок 1/2» у банері (у стилі плиток tile-primary) */
+.banner-steps{margin-top:16px;display:flex;flex-wrap:wrap;gap:14px;}
+.banner-step{
+  display:inline-block;
+  background:linear-gradient(120deg, #f2b632 0%, #ffd45c 100%);
+  border:1px solid #d99a1e;
+  color:var(--navy);
+  font-family:Arial,sans-serif;
+  font-weight:bold;
+  font-size:1.1em;
+  padding:12px 24px;
+  border-radius:8px;
+  text-decoration:none;
+  box-shadow:0 3px 10px rgba(0,0,0,0.25);
+  transition:transform .18s, box-shadow .18s;
+}
+.banner-step:hover{transform:translateY(-3px);box-shadow:0 8px 18px rgba(0,0,0,0.35);}
+
 /* ===== CONTAINER ===== */
 .container{
   max-width:900px;
