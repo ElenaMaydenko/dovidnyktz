@@ -18,8 +18,8 @@ https://www.inclusion.gob.es/web/migraciones/modelos-generales
 Порожніх бланків 790-052 і 790-062 не існує: PDF генерується лише після заповнення
 форми онлайн (у документ вписуються ваші дані та штрих-код). Актуальні адреси:
 
-- Таса 052: https://sede.administracionespublicas.gob.es/pagina/index/directorio/tasa052
-- Таса 062: https://sede.administracionespublicas.gob.es/pagina/index/directorio/tasa062
+- Таса 052: https://mptmd.sede.gob.es/pagina?id=Tasa-052
+- Таса 062: https://mptmd.sede.gob.es/pagina?id=Tasa-062
 - Таса 012 (картка TIE): https://sede.policia.gob.es/Tasa790_012/ImpresoRellenar
 
 Бланки періодично оновлюються — перед подачею варто звірити з офіційним сайтом.
